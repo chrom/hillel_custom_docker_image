@@ -8,10 +8,5 @@ Create image based in Ubuntu 18.04 with:
 ## Building image
 ```docker build -t ratio/hillel_hw_dockerfile:1.0.0 .```
 
-
-```docker scan ratio/hillel_hw_dockerfile```
-
-$ docker stop container01
-$ docker commit container01 image01
-$ docker rm container01
-$ docker run -d -P --name container01 image01
+## Run image
+```docker run -di -p 8080:8080  --name=hillel  ratio/hillel_hw_dockerfile:1.0.0```
